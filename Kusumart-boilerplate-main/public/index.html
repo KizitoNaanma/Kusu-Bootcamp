@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Kusu Mart</title>
+</head>
+
+<body>
+  <div class="container mt-2" style="max-width: 72em">
+
+    <nav class="navbar bg-white navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-brand m-0 h4 fw-bold">KusuMart</span>
+        <span class="nav-link border rounded-pill bg-light">
+          <span id="balance">0</span>
+          KUSU
+        </span>
+      </div>
+    </nav>
+
+
+
+
+  <div class="mb-4" style="margin-top: 4em">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Add Item
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <main id="main" class="row"></main>
+</div>
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+              <label for="name" class="col-form-label">Item Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="image" class="col-form-label">Image URL</label>
+              <input type="text" class="form-control" id="image">
+            </div>
+            <div class="form-group">
+              <label for="description" class="col-form-label">Description</label>
+              <textarea class="form-control" id="description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Price (KUSU)</label>
+              <input type="text" class="form-control" id="price">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Location</label>
+              <input type="text" class="form-control" id="location">
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="addProduct" data-dismiss="modal" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
